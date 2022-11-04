@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navlink {
     text-decoration: none;
 
@@ -6,7 +12,7 @@
 }
 
 .project-tile {
-    color: #111;
+    color: whitesmoke;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
@@ -20,16 +26,57 @@
     width: 100%;
     height: 100vh;
     background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    /* background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+    background-image: url("../images/mainbg.png" );
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.title{
+    font-size: 50px;
+    color: whitesmoke;
+    text-transform: uppercase;
 }
 
 .container-personalized{
-    margin-top: 80px;
+    position: relative;
+    top: -40px;
+    /* margin-top: 80px; */
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #3a3d40;
+}
+
+.social-Media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.projects{
+    height: 300px;
+}
+.social-Media{
+    height: 300px;
+}
+.link{
+    background-color: goldenrod;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.link:hover{
+    background-color: #ac7b01;
+    text-decoration: none;
+    color: white;
 }
 
 @media (min-width:576px) {
